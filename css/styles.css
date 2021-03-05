@@ -1,14 +1,114 @@
-.div-superior{
+/* Elemento não precisa de introdução, exemplo: button, a, h1, img, div */
+/* Classe necessita da introdução de um ".", exemplo: .nav-super, .div-img, .div-btn */
+/* Id necessita da introdução de um "#", exemplo: #cadastrar, #login */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    position: absolute;
+    overflow-x: hidden;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+}
+
+/*******************************************************/
+/*********************** NAVBAR ***********************/
+.nav-superior{
     color: #fff;
-    padding: 0px 50px;
+    padding: 0px 10px;
     text-align: center;
     display: flex;
+    z-index: 1999;
     align-items: center;
-    justify-content: space-evenly;
     background-color: #000;
     position: fixed;
     width: 100%;
-    left: 0;
     top: 0;
-    right: 0;
 }
+
+.div-img img{ 
+    max-width: 80%;
+}
+
+.div-btn{
+    position: absolute;
+    right: 50px;
+}
+    .div-btn .btn{
+        padding: 8px 25px;
+        margin: 0 10px;
+        border: none;
+        font-size: 1rem;
+        box-shadow: none;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 1px;
+    }
+
+    .div-btn #cadastrar{
+        background-color: #444;
+        color: #fff;
+        border: none; 
+        cursor: pointer;
+    }
+        .div-btn #cadastrar:hover{
+            box-shadow: none;
+            background-color: #6a6a6a;
+            color: #fff;
+            transition: all 0.4s;
+        }
+        .div-btn #cadastrar:focus{
+            box-shadow: none;
+            border: none; 
+            outline: none;
+        }
+
+    .div-btn #login{
+        background-color: #5CD8F8;
+        color: #000;
+        cursor: pointer;
+    }
+        .div-btn #login:hover{
+            background-color: #0fabd1;
+            color: #fff;
+            cursor: pointer;
+        }
+        .div-btn #login:focus{
+            box-shadow: none;
+            border: none; 
+            outline: none;
+        }
+
+
+
+/*******************************************************/
+/************************ INTRO ***********************/
+.intro{
+    margin: 6rem 5rem 0rem;
+    display: flex;
+}
+    .intro .parte-esquerda{
+        width: 50%
+    }
+
+    .intro .div-texto{
+        padding-top: 10rem;
+    }
+    .intro .parte-direita{
+        width: 50%
+    }
+        .intro .parte-direita a{
+            margin-top: 3rem;
+        }
+
+        .intro .parte-direita .intro-img{
+            width: 100%;
+        }
+
+

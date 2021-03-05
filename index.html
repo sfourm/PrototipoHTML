@@ -6,23 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu primeiro site</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
 </head>
 
 <body>
-    <div class="div-superior">
-        <div class="div-img">
-            <a href="index.html">
-                <img src="img/logo.png" alt="Logo">
-            </a>
-        </div>
+    <div class="wrapper">
+        <header>
+            <nav class="nav-superior">
+                <div class="div-img">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="Logo">
+                    </a>
+                </div>
+                
+                <div class="div-btn">
+                    <button type="button" class="btn" id="cadastrar">Cadastrar</button>
+                    
+                    <button type="button" class="btn" id="login">Entrar</button>
+                </div>
+            </nav>
+        </header>
         
-        <div class="div-btn">
-            <button type="button" class="btn" id="cadastrar">Cadastra-se</button>
-            
-            <button type="button" class="btn" id="login">Entrar</button>
-        </div>
-    </div>
+        <div class="intro">
+            <div class="parte-esquerda">
+                <div class="div-texto">
+                    <h1>Vagas de emprego</h1>
+                    <h3>Busque ou divulge vagas aqui!</h3>
+                    <p>Podemos lhe ajudar! Cadastra-se para buscar vagas da sua área e, também; os melhores funcionários para sua vaga, de forma <b>integral e gratuita!</b> Acesse já!</p>
+                </div>
+            </div>
+
+            <div class="parte-direita">
+                <div class="intro-img">
+                    <img src="img/destaque1.png" alt="Destaque">
+                </div>
+            </div>
+        </div>   
+        
+        <footer>
+
+        </footer>
+    </div>   
 </body>
 
 </html>
